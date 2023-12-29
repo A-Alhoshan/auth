@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Login Page</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <div class="login-container">
+        <header>
+            <img src="./img/logo.png" alt="Your App Logo" class="logo">
+            <a href="signup.html" class="download-app">Sign Up</a>
+        </header>
+        <form action="/login" method="post" class="login-form">
+            <input type="email" id="username" name="username" placeholder="Email" required>
+            <input type="password" id="password" name="password" placeholder="Password" required>
+            <button type="submit" class="sign-in-button">Sign In</button>
+        </form>
+        <div class="divider">
+            <hr class="line" />
+            <span class="or">or</span>
+            <hr class="line" />
+        </div>
+        
+        <button class="auth-passkeys" id="authSignIn">
+            <img src="./img/fingerPrint.png" alt="Apple Logo" class="auth-icon">
+            Sign in with passkeys</button>
+            <script src="auth.js"></script> 
+            
+            
+        <div class="auth-options">
+            <button id="loginButton">
+                <img src="./img/google.png" alt="Google Logo" class="auth-icon">
+                Continue with Google</button>
+                <script src="auth.js"></script>           
+        </div>
+
+        <div class="gtihub2">
+            <button id="gitbutton">
+                <img src="./img/secondgithublogo.png" alt="Github Logo" class="auth-icon">
+                Continue with Github</button>
+                <script src="auth.js"></script>           
+        </div>
+      
+    </div>
+    <script src="./auth.js" type="module"></script>
+
+</body>
+
+</html>
